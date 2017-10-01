@@ -123,7 +123,7 @@ val lr : int list = [1; 2; 1; 2]
 // If we do [1;2;3;], then:
 
 let rec sum l = match l with
-  	| hd :: tl -> hd + sum(tl)
+    | hd :: tl -> hd + sum(tl)
     | [] -> 0;;
 
 // hd matches 1, tl matches [2;3;]
@@ -133,7 +133,7 @@ If we wanted to add the occurence of the number 3 here:
 
 ```ocaml
 let rec sum l = match l with
-  	| 3 :: tl -> 3 + sum(tl)
+    | 3 :: tl -> 3 + sum(tl)
     | [] -> 0
     | _ :: tl -> sum(tl);;
 ```
